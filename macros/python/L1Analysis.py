@@ -33,7 +33,7 @@ class L1Ana(object):
         # Import FWLite
         L1Ana.log.info("FWCoreFWLite library being loaded.")
         root.gSystem.Load("libFWCoreFWLite")
-        root.gROOT.ProcessLine('AutoLibraryLoader::enable();')
+        root.gROOT.ProcessLine('FWLiteEnabler::enable();')
         # root.gSystem.Load("libCintex")
         # root.gROOT.ProcessLine('ROOT::Cintex::Cintex::Enable();')
 
