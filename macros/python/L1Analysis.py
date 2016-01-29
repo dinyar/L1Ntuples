@@ -198,7 +198,7 @@ class L1Ntuple(object):
         Initializes the TChains and adds present Trees as friends to the main tree
         this is needed so the tree's GetEntry stays in synch.
         """
-        self.tree_main = root.TChain("l1NtupleProducer/L1Tree")
+        self.tree_main = root.TChain("l1Tree/L1Tree")
         self.tree_muon = root.TChain("l1MuonRecoTreeProducer/MuonRecoTree")
         self.tree_reco = root.TChain("l1RecoTreeProducer/RecoTree")
         self.tree_extra = root.TChain("l1ExtraTreeProducer/L1ExtraTree")
