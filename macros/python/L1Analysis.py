@@ -280,7 +280,7 @@ class L1Ntuple(object):
                 "Could not open file: {fname}".format(fname=self.file_list[0]))
             exit(0)
 
-        my_chain = self.curr_file.Get("l1NtupleProducer/L1Tree")
+        my_chain = self.curr_file.Get("l1Tree/L1Tree")
         muon = self.curr_file.Get("l1MuonRecoTreeProducer/MuonRecoTree")
         jets = self.curr_file.Get("l1RecoTreeProducer/RecoTree")
         extra = self.curr_file.Get("l1ExtraTreeProducer/L1ExtraTree")
